@@ -1,9 +1,7 @@
 package com.example.wheatherapp.model
 
-import java.time.DayOfWeek
-
 data class WeeklyWeatherModel(
-    val dayOfWeek: DayOfWeek,
+    val weekday: String,
     val icon: Int,
     val temperature: String
 )

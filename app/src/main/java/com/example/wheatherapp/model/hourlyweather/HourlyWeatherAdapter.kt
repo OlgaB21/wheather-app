@@ -10,7 +10,8 @@ class HourlyWeatherAdapter(private val hourlyList: List<HourlyWeatherModel>) :
     RecyclerView.Adapter<HourlyWeatherViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HourlyWeatherViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.hourly_weather_item, parent, false)
+        val view =
+            LayoutInflater.from(parent.context).inflate(R.layout.hourly_weather_item, parent, false)
         return HourlyWeatherViewHolder(view)
     }
 

@@ -1,12 +1,15 @@
 package com.example.wheatherapp.view
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.wheatherapp.R
+import com.example.wheatherapp.model.weeklyweather.WeeklyWeatherAdapter
 
 class WeatherWeekFragment : Fragment() {
 
@@ -25,8 +28,20 @@ class WeatherWeekFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(WeatherWeekViewModel::class.java)
+        viewModel = ViewModelProvider(this)[WeatherWeekViewModel::class.java]
         // TODO: Use the ViewModel
+
+        val recycleView = view?.findViewById<RecyclerView>(R.id.weekly_temperature_list)
+        recycleView?.layoutManager =
+            LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
+        recycleView?.adapter = WeeklyWeatherAdapter(viewModel.list)
     }
 
 }
+
+
+
+
+
+
+

@@ -8,26 +8,30 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/today_weather_containter"
+        android:name="com.example.wheatherapp.view.WeatherTodayFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:name="com.example.wheatherapp.view.WeatherTodayFragment"
         android:layout_margin="30dp"
-        android:background="@drawable/container_background" />
+        android:layout_marginTop="404dp"
+        android:background="@drawable/container_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/weekly_weather_containter"
+        android:name="com.example.wheatherapp.view.WeatherWeekFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:name="com.example.wheatherapp.view.WeatherTodayFragment"
         android:layout_margin="30dp"
-        android:background="@drawable/container_background" />
-
+        android:background="@drawable/container_background"
+        app:layout_constraintBottom_toBottomOf="@id/today_weather_containter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/today_weather_containter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
