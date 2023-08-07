@@ -6,24 +6,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.WeatherWeekFragment">
 
-    <ImageView
-        android:id="@+id/weather_icon2"
-        app:layout_constraintStart_toStartOf="@id/weekly_temperature_list"
-        app:layout_constraintTop_toBottomOf="@id/weekly_temperature_list"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/sun_icon" />
+<!--    <ImageView-->
+<!--        android:id="@+id/weather_icon2"-->
+<!--        app:layout_constraintStart_toStartOf="@id/weekly_temperature_list"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/weekly_temperature_list"-->
+<!--        android:layout_width="60dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:src="@drawable/sun_icon" />-->
 
-    <TextView
-        android:id="@+id/day_temperature"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="24°"
-        android:textSize="40sp"
-        app:layout_constraintStart_toStartOf="@+id/weekly_temperature_list"
-        app:layout_constraintBottom_toTopOf="@+id/weekly_temperature_list"/>
+<!--    <TextView-->
+<!--        android:id="@+id/day_temperature"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:text="24°"-->
+<!--        android:textSize="40sp"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/weekly_temperature_list"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/weekly_temperature_list"/>-->
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -34,8 +34,8 @@
         android:layout_marginHorizontal="10dp"
         android:layout_marginStart="28dp"
         android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingBottom="20dp"
         />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

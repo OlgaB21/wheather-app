@@ -9,6 +9,10 @@ class WeatherWeekViewModel : ViewModel() {
         WeeklyWeatherModel("Monday", R.drawable.cloud_icon, temperature = "10"),
         WeeklyWeatherModel("Monday", R.drawable.sun_icon, temperature = "29"),
         WeeklyWeatherModel("Monday", R.drawable.cloud_icon, temperature = "10"),
-        WeeklyWeatherModel("Monday", R.drawable.sun_icon, temperature = "29")
+        WeeklyWeatherModel("Monday", R.drawable.sun_icon, temperature = "29"),
+        WeeklyWeatherModel("Monday", R.drawable.cloud_icon, temperature = "10"),
+        WeeklyWeatherModel("Monday", R.drawable.sun_icon, temperature = "29"),
+        WeeklyWeatherModel("Monday", R.drawable.cloud_icon, temperature = "10")
+
     )
 }

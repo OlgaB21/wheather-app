@@ -33,7 +33,7 @@ class WeatherWeekFragment : Fragment() {
 
         val recycleView = view?.findViewById<RecyclerView>(R.id.weekly_temperature_list)
         recycleView?.layoutManager =
-            LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
+            LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
         recycleView?.adapter = WeeklyWeatherAdapter(viewModel.list)
     }
 
