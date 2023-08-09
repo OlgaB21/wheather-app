@@ -5,3 +5,4 @@ data class HourlyWeatherModel(
     val icon: Int,
     val temperature: String
 )
+

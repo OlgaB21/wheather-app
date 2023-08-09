@@ -11,3 +11,4 @@ class WeeklyWeatherViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)
     val icon: ImageView = itemView.findViewById(R.id.weekly_icon)
     val temperature: TextView = itemView.findViewById(R.id.temperature)
 }
+

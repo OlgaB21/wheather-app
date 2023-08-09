@@ -26,3 +26,4 @@ class WeeklyWeatherAdapter(private val weeklyList: List<WeeklyWeatherModel>) :
 }
 
 
+

@@ -5,3 +5,4 @@ data class WeeklyWeatherModel(
     val icon: Int,
     val temperature: String
 )
+
